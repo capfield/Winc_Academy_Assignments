@@ -1,0 +1,25 @@
+h1 {
+  font-family: monospace;
+  color: rgb(126, 47, 18);
+}
+h2 {
+  font-family: monospace;
+  color: rgb(141, 49, 18);
+}
+h2 {
+  font-family: monospace;
+  border: 3px solid rgb(102, 59, 3);
+  border-style: dotted;
+  border-width: thick;
+}
+
+h2 {
+  font-family: monospace;
+  background-color: rgb(219, 179, 126);
+}
+
+h3 {
+  font-family: monospace;
+  background-color: rgb(184, 124, 84);
+  color: rgb(219, 179, 126);
+}
