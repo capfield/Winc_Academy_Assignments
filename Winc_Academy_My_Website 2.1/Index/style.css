@@ -1,0 +1,120 @@
+.box-6 {
+  font-family: monospace;
+  color: rgb(126, 47, 18);
+  background-color: lightpink;
+  margin-right: 50%;
+}
+.box-5 {
+  font-family: monospace;
+  color: rgb(141, 49, 18);
+  background-color: lightskyblue;
+  margin-right: 20%;
+}
+
+.categories ul {
+  background-color: chartreuse;
+  padding: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.box-2 {
+  text-align: center;
+  padding-left: 20px;
+  font-family: monospace;
+  border: 3px solid rgb(102, 59, 3);
+  border-style: dotted;
+  border-width: thick;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.box-3 {
+  font-family: monospace;
+  background-color: rgb(219, 179, 126);
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+.box-2 {
+  font-family: monospace;
+  background-color: rgb(184, 124, 84);
+  color: rgb(219, 179, 126);
+}
+.box-1 {
+  background-color: rgb(219, 179, 126);
+  padding-left: 2%;
+  margin: 0 auto;
+}
+
+.box-4 {
+  background-color: brown;
+}
+@media screen and (max-width: 400px) {
+  .box-4 {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 500px) {
+  .box-4 {
+    background-color: rgb(14, 110, 255);
+  }
+}
+
+.box-7 {
+  background-color: chocolate;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+.form-group-1 {
+  font-family: monospace;
+  margin-left: 13.5%;
+}
+
+.form-group-2 {
+  font-family: monospace;
+  margin-left: 13%;
+}
+
+.form-group-3 {
+  font-family: monospace;
+  margin-left: 12%;
+}
+
+.button {
+  border-top-color: darkcyan;
+  border-left-color: darkorchid;
+  border-bottom-color: deeppink;
+  border-right-color: fuchsia;
+  background-color: lightpink;
+  font-family: fantasy;
+  border-width: 5px;
+  margin-left: 17%;
+}
+
+.link {
+}
+/*unvisited link*/
+a:link {
+  color: green;
+}
+
+/:visited link*/ a:visited {
+  color: rgb(233, 39, 233);
+}
+
+/*mouse over link*/
+a:hover {
+  background-color: slateblue;
+}
+
+.box-9 {
+  background-color: violet;
+  border-top-color: tomato;
+  border-bottom-color: springgreen;
+  border-right-color: royalblue;
+  border-left-color: rgb(233, 39, 233);
+  font-family: fantasy;
+  border-style: ridge;
+}
