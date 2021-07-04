@@ -1,0 +1,152 @@
+body {
+  background-color: indianred;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+  opacity: 0.2;
+}
+
+.ul-menu {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  width: 300px;
+  line-height: 50px;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.radio {
+  cursor: pointer;
+}
+
+.radio:hover input {
+  background-color: rgb(107, 104, 104);
+}
+
+.home,
+.blue,
+.green,
+.yellow,
+.grey,
+.orange {
+  color: rgb(233, 221, 221);
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.home {
+  border: solid 5px indianred;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.blue {
+  border: solid 5px rgb(87, 124, 194);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.green {
+  border: solid 5px rgb(87, 218, 163);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.yellow {
+  border: solid 5px rgb(243, 216, 95);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.grey {
+  border: solid 5px grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.orange {
+  border: solid 5px rgb(216, 169, 38);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.home:hover {
+  background-color: indianred;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.blue:hover {
+  background-color: rgb(87, 124, 194);
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.green:hover {
+  background-color: rgb(87, 218, 163);
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.yellow:hover {
+  background-color: rgb(243, 216, 95);
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.grey:hover {
+  background-color: grey;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.orange:hover {
+  background-color: rgb(216, 169, 38);
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.text-background {
+  font-family: monospace;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(245, 245, 240);
+  padding-left: 550px;
+  margin-top: -200px;
+}
+
+.home-background {
+  background-color: indianred;
+}
+
+.blue-background {
+  background-color: rgb(87, 124, 194);
+}
+
+.green-background {
+  background-color: rgb(87, 218, 163);
+}
+
+.yellow-background {
+  background-color: rgb(243, 216, 95);
+}
+
+.grey-background {
+  background-color: grey;
+}
+
+.orange-background {
+  background-color: rgb(216, 169, 38);
+}
