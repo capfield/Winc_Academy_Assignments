@@ -1,0 +1,36 @@
+var product = {
+    merk: "AH",
+    type: "Cherrytomaten",
+    herkomst: "onbekend",
+    gewicht: "250 GR",
+    prijs: "€ 0.95"
+};
+
+console.log(product.merk + " " + product.type + " " + product.herkomst + " " + product.gewicht + " " + product.prijs);
+
+VM872:9 AH Cherrytomaten onbekend 250 GR € 0.95
+undefined
+var product = {
+    merk: "AH",
+    type: "Cherrytomaten",
+    herkomst: "onbekend",
+    gewicht: "250 GR",
+    prijs: "0.95"
+    aanbieding: "Niet in de aanbieding"
+};
+
+console.log(product.merk + " " + product.type + " " + product.herkomst + " " + product.gewicht + " " + product.prijs + " " + product.aanbieding);
+
+VM1003:7 Uncaught SyntaxError: Unexpected identifier
+var product = {
+    merk: "AH",
+    type: "Cherrytomaten",
+    herkomst: "onbekend",
+    gewicht: "250 GR",
+    prijs: "0.95",
+    aanbieding: "Niet in de aanbieding"
+};
+
+console.log(product.merk + " " + product.type + " " + product.herkomst + " " + product.gewicht + " " + product.prijs + " " + product.aanbieding);
+VM1008:10 AH Cherrytomaten onbekend 250 GR 0.95 Niet in de aanbieding
+undefined

@@ -1,0 +1,92 @@
+//Tess van Tilburg
+//03/10/2021
+//Opdracht Visberekening
+
+
+<html>
+    
+
+
+    <head>
+
+     <title>Visberekening</title>
+    
+    
+    </head>
+    
+    <body style="background-color:rgb(182, 178, 170); font-family: monospace; color: mediumblue; text-align: center;" >
+        
+     
+    
+    <h1>Bestel hier uw visproducten</h1>
+    <br>
+    <br>
+    
+    <h5 style="color: midnightblue;">
+    De prijs van een <u>bakje kibbeling</u> (300 gram) is € <span id="labelKibbelingPrijs">6.00</span> incl. gratis saus.<br>
+    De prijs van een <u>viskroket</u> (per stuk) is € <span id="labelViskroketPrijs">1.50</span>.<br>
+    De prijs van een <u>viskoekje</u> (per stuk) is € <span id="labelViskoekjePrijs">1.25</span>.<br>
+    De prijs van een <u>visrollade</u> (per kilo) is € <span id="labelVisrolladePrijs">27.45</span>.
+    </h5> 
+    <hr style="border-style:dotted; border-width: 3px; border-bottom-color: rgb(118, 208, 238); border-top-color: mediumblue;">
+    <br>
+    <br>
+    <h4 style="color: midnightblue;">
+    Voer het aantal bakjes kibbeling in dat je wilt: <input type="number" min="0" id="invoerveldAantalKibbeling" style="background-color: peru; margin-left: 6px;"> <br>
+    Voer het aantal viskroketten in dat je wilt: <input type="number" min="0" id="invoerveldAantalViskroket" style="background-color: peru; margin-left: 35px;"> <br>
+    Voer het aantal viskoekjes in dat je wilt: <input type="number" min="0" id="invoerveldAantalViskoekjes" style="background-color: peru; margin-left: 50px;"> <br>
+    Voer het aantal visrollades in dat je wilt: <input type="number" min="0" id="invoerveldAantalVisrollades" style="background-color: peru; margin-left: 43px;"> <br><br>
+    </h4>
+    
+    <hr style="border-style:dotted; border-width: 3px; border-bottom-color: rgb(118, 208, 238); border-top-color: mediumblue;">
+    <br>
+
+    <input type="button" id="btn1" value="Bereken hier de totaalprijs" onclick="berekening()" style="background-color: rgb(102, 228, 157); color: rgb(12, 12, 87); border-color: royalblue; border-style:solid; border-radius: 20px; font-family: monospace;">
+    <br>
+    <br>
+    <p>
+    Aantal bakjes kibbeling: <span id="label1"></span> <br>
+    Aantal viskroketten: <span id="label2"></span> <br>
+    Aantal viskoekjes: <span id="label3"></span> <br>
+    Aantal visrollades: <span id="label4"></span> <br> <br>
+    </p>
+    <hr style="border-style:dotted; border-width: 3px; border-bottom-color: rgb(118, 208, 238); border-top-color: mediumblue;">
+    <br>
+    <br>
+     Totaalprijs: <span id="label5">€ </span>
+    
+    
+    <script>
+    var artikelen = [
+            ["Kibbeling", 6.00],
+            ["Viskroket", 1.50],
+            ["Viskoekje", 1.25],
+            ["Visrollade", 27.45]
+        ];
+    
+    labelKibbelingPrijs.innerHTML = (artikelen[0][1]).toFixed(2);
+    labelViskroketPrijs.innerHTML = artikelen[1][1].toFixed(2); 
+    labelViskoekjePrijs.innerHTML = artikelen[2][1].toFixed(2);
+    labelVisrolladePrijs.innerHTML = artikelen[3][1].toFixed(2);
+    
+    
+    function berekening() {
+
+        var aantalKibbeling, aantalViskroket, aantalViskoekje, aantalVisrollade, totaalPrijs;
+                
+        aantalKibbeling = document.getElementById("invoerveldAantalKibbeling").value; 
+        aantalViskroket = document.getElementById("invoerveldAantalViskroket").value; 
+        aantalViskoekje = document.getElementById("invoerveldAantalViskoekjes").value;
+        aantalVisrollade = document.getElementById("invoerveldAantalVisrollades").value;
+    
+        totaalPrijs = ((aantalKibbeling * artikelen[0][1]) + (aantalViskroket * artikelen[1][1]) + (aantalViskoekje * artikelen[2][1]) + (aantalVisrollade * artikelen[3][1])).toFixed(2); 
+            
+        label1.innerHTML = aantalKibbeling; 
+        label2.innerHTML = aantalViskroket; 
+        label3.innerHTML = aantalViskoekje;
+        label4.innerHTML = aantalVisrollade;
+        label5.innerHTML = "€ " + totaalPrijs; 
+    }
+    </script>
+    </body>
+    </html>

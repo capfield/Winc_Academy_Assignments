@@ -1,0 +1,11 @@
+var temperatuur
+temperatuur = prompt("Vul hier temperatuur in");
+
+if (temperatuur >= 10 && temperatuur <=20) {
+   console.log("Gemiddelde temperatuur");
+} else if  (temperatuur <=0 || temperatuur >=30) {
+    console.log("EXTREME TEMPERATUREN");
+} 
+
+VM155:5 Gemiddelde temperatuur
+undefined
