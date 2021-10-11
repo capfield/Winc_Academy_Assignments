@@ -1,0 +1,64 @@
+//Tess van Tilburg
+//19-09-2021
+//Huiswerk opdracht visbon1
+
+var artikel1, artikel2, artikel3, artikel4, artikel5;
+var gewicht1, gewicht2;
+var prijs1, prijs2, prijs3, prijs4, prijs5;
+var kiloprijs1, kiloprijs2;
+var aantal1, aantal2, aantal3;
+var stuk1, stuk2, stuk3;
+var per1;
+var korting1;
+var totaal;
+
+artikel1 = "VISROLLADE";
+artikel2 = "BOTERVIS";
+artikel3 = "KIBBELING 500 GR.";
+artikel4 = "VISKOEKJES";
+artikel5 = "BAKJE RAVIGOTTESAUS";
+
+
+gewicht1 = 0.535;
+gewicht2 = 0.225;
+
+aantal1 = 1;
+aantal2 = 3;
+aantal3 = 3;
+
+kiloprijs1 = 27.50.toFixed(2);
+kiloprijs2 = 29.50.toFixed(2);
+
+stuk1 = 8.75;
+stuk2 = 1.25;
+stuk3 = 0.60.toFixed(2);
+
+per1 = 1;
+korting1 = 6 * 0.08;
+
+totaal = ((kiloprijs1 * gewicht1) + (kiloprijs2 * gewicht2) + (stuk1 * aantal1) + (stuk2 * aantal2) + (stuk3 * aantal3));
+
+prijs1 = (kiloprijs1 * gewicht1).toFixed(2);
+prijs2 = (kiloprijs2 * gewicht2).toFixed(2);
+prijs3 = (stuk1 * aantal1).toFixed(2);
+prijs4 = (stuk2 * aantal2).toFixed(2);
+prijs5 = (stuk3 * aantal3).toFixed(2);
+
+console.log(artikel1, gewicht1, "GR", "X", "€", kiloprijs1, "=", "€", prijs1);
+console.log(artikel2, gewicht2, "GR", "X", "€", kiloprijs2, "=", "€", prijs2);
+console.log(artikel3, aantal1, "STUKS", "X", "€", stuk1, "=", "€", prijs3);
+console.log(artikel4, aantal2, "STUKS", "X", "€", stuk2, "=", "€", prijs4);
+console.log(artikel5, aantal3, "STUKS", "X", "€", stuk3, "=", "€", prijs5);
+console.log("Uw voordeel per 3 stuks: €", korting1);
+console.log("TOTAAL: €", (totaal - korting1).toFixed(2));
+
+
+
+VM863:47 VISROLLADE 0.535 GR X € 27.50 = € 14.71
+VM863:48 BOTERVIS 0.225 GR X € 29.50 = € 6.64
+VM863:49 KIBBELING 500 GR. 1 STUKS X € 8.75 = € 8.75
+VM863:50 VISKOEKJES 3 STUKS X € 1.25 = € 3.75
+VM863:51 BAKJE RAVIGOTTESAUS 3 STUKS X € 0.60 = € 1.80
+VM863:52 Uw voordeel per 3 stuks: € 0.48
+VM863:53 TOTAAL: € 35.17
+undefined

@@ -1,0 +1,47 @@
+//Tess van Tilburg
+//19-09-2021
+//Huiswerk opdracht visbon1
+
+
+let artikel1 = "VISROLLADE";
+let artikel2 = "BOTERVIS";
+let artikel3 = "KIBBELING 500 GR.";
+let artikel4 = "VISKOEKJES";
+let artikel5 = "BAKJE RAVIGOTTESAUS";
+
+
+let gewicht1 = 0.535;
+let gewicht2 = 0.225;
+
+let aantal1 = 1;
+let aantal2 = 3;
+let aantal3 = 3;
+
+let kiloprijs1 = 27.50.toFixed(2);
+let kiloprijs2 = 29.50.toFixed(2);
+
+let stuk1 = 8.75;
+let stuk2 = 1.25;
+let stuk3 = 0.60.toFixed(2);
+
+let per1 = 1;
+let korting1 = 6 * 0.08;
+
+let prijs1 = (kiloprijs1 * gewicht1).toFixed(2);
+let prijs2 = (kiloprijs2 * gewicht2).toFixed(2);
+let prijs3 = (stuk1 * aantal1).toFixed(2);
+let prijs4 = (stuk2 * aantal2).toFixed(2);
+let prijs5 = (stuk3 * aantal3).toFixed(2);
+
+let totaal = ((kiloprijs1 * gewicht1) + (kiloprijs2 * gewicht2) + (stuk1 * aantal1) + (stuk2 * aantal2) + (stuk3 * aantal3));
+
+document.write(artikel1, gewicht1, "GR", "X", "€", kiloprijs1, "=", "€", prijs1);
+document.write(artikel2, gewicht2, "GR", "X", "€", kiloprijs2, "=", "€", prijs2);
+document.write(artikel3, aantal1, "STUKS", "X", "€", stuk1, "=", "€", prijs3);
+document.write(artikel4, aantal2, "STUKS", "X", "€", stuk2, "=", "€", prijs4);
+document.write(artikel5, aantal3, "STUKS", "X", "€", stuk3, "=", "€", prijs5);
+document.write("Uw voordeel per 3 stuks: €", korting1);
+document.write("TOTAAL: €", (totaal - korting1).toFixed(2));
+
+
+undefined

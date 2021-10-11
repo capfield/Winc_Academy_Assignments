@@ -1,0 +1,25 @@
+var naam, leeftijd, hobby;
+
+naam = "Tess,";
+leeftijd = 25;
+hobby = "Fotografie.";
+
+console.log(naam+" "+leeftijd+" "+hobby);
+
+
+var naam, leeftijd, hobby;
+
+naam = "Tess,";
+leeftijd = "25,";
+hobby = "Fotografie.";
+
+console.log(naam+" "+leeftijd+" "+hobby);
+
+
+var a = 22;
+var b = 19;
+
+a/b
+VM1670:7 Tess, 25 Fotografie.
+VM1670:16 Tess, 25, Fotografie.
+1.1578947368421053
