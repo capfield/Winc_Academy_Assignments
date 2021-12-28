@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Bestelpagina</title> 
+</head>
+
+
+<a href="index.html"><img style="margin-top: 25px;" height="150" src="haringanchor.png"></a><br><br>
+    <body background="fishbg.png"> 
+
+    <style>
+        body{ font-family:Arial, Helvetica, sans-serif; background-color:rgb(225, 232, 245); color: rgb(19, 51, 88); text-align: center;}
+        nav{border-style:solid; background-color:rgb(19, 51, 88); text-align:center; text-decoration-color: rgb(225, 232, 245); 
+            border-width: 4px; padding: 8px; margin-left: 300px; margin-right: 300px;
+            border-radius: 7px;}
+        a{text-decoration:none; font-family:Arial, Helvetica, sans-serif}
+    </style>
+
+<nav>
+    <a  style="float: left; color: rgb(225, 232, 245);" href="index.html">Homepagina</a>
+    <a  style="color: rgb(225, 232, 245);" href="about.html">Over ons</a>
+    <a style="margin-left: 500px; color: rgb(225, 232, 245); " href="order.html">Bestellen</a>
+    <a style="float: right; color: rgb(225, 232, 245); " href="contact.html">Contact</a>
+</nav><br><br><br>
+
+
+<h5 style="color: rgb(19, 51, 88);">
+    De prijs van een <u>bakje visfriet</u> (250 gram) is € <span id="label1">. </span>.<br>
+    De prijs van een <u>viskoekje</u> (per stuk) is € <span id="label2"></span>.<br> 
+    De prijs van een <u>kibbeling</u> (per kilo) is € <span id="label3"></span>.<br>
+    De prijs van een <u>zalmsnack</u> (per stuk) is € <span id="label4"></span>.<br>
+    De prijs van een <u>verse zalmmoot</u> (per kilo) is € <span id="label5"></span>.<br>
+    De prijs van een <u>dorade</u> (per kilo) is € <span id="label6"></span>.<br>
+    De prijs van een bakje <u>diverse sauzen</u> (per stuk) (ravigotte-, cocktail-, knoflooksaus) is € <span id="label7">0.60.</span>.
+    </h5> 
+
+    <hr style="border-style:dotted; border-width: 4px; margin-left: 300px; margin-right: 300px; border-bottom-color: rgb(126, 169, 191); border-top-color: rgb(17,35,55);">
+
+    <br>
+    <br>
+    <h4 style="color: rgb(19, 51, 88);">
+    Voer het aantal bakjes visfriet in dat je wilt: <input type="number" min="0" max="15" placeholder="1" id="inv1" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 6px;"> <br>
+    Voer het aantal viskoekjes in dat je wilt: <input type="number" min="0" max="15" placeholder="1" id="inv2" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 35px;"> <br>
+    Voer het aantal gram kibbeling in dat je wilt: <input type="number" min="0" max="5000" placeholder="0.500" id="inv3" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 50px;"> <br>
+    Voer het aantal zalmsnacks in dat je wilt: <input type="number" min="0" max="15" placeholder="1" id="inv4" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 43px;"> <br>
+    Voer het aantal gram zalmmoot in dat je wilt: <input type="number" min="0" max="5000" placeholder="0.500" id="inv5" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 35px;"> <br>
+    Voer het aantal gram dorade in dat je wilt: <input type="number" min="0" max="5000" placeholder="0.500" id="inv6" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 50px;"> <br>
+    Voer het aantal bakjes saus in dat je wilt: <input type="number" min="0" max="20" placeholder="1" id="inv7" style="background-color: rgb(126, 169, 191); color:rgb(225, 232, 245); margin-left: 43px;"> <br><br>
+    </h4>
+    
+    <hr style="border-style:dotted; border-width: 4px; margin-left: 300px; margin-right: 300px; border-bottom-color: rgb(126, 169, 191); border-top-color: rgb(17,35,55);">
+    <br>
+
+    <input type="button" id="btn1" value="Bereken hier de totaalprijs" onclick="berekening()"  style="background-color: rgb(126, 169, 191); color: rgb(12, 12, 87); border-color: royalblue; border-style:solid; border-radius: 20px; font-family: monospace;">
+    <br>
+    <br>
+    <p>
+    Aantal bakjes visfriet per stuk: <span id="label11"></span><br>
+    Aantal viskoekjes per stuk: <span id="label22"></span><br>
+    Aantal kibbeling per gram: <span id="label33"></span><br>
+    Aantal zalmsnacks per stuk: <span id="label44"></span><br>
+    Aantal verse zalmmoten per gram: <span id="label55"></span><br>
+    Aantal dorade per gram: <span id="label66"></span><br>
+    Aantal bakjes saus per stuk: <span id="label77"></span><br><br>
+    </p>
+
+    Prijs bakje visfriet: <span id = "label111"></span><br>
+    Prijs viskoekjes: <span id = "label222"></span><br>
+    Prijs bakje kibbeling: <span id = "label333"></span><br>
+    Prijs zalmsnacks: <span id = "label444"></span><br>
+    Prijs verse zalmmoot: <span id = "label555"></span><br>
+    Prijs dorade: <span id = "label666"></span><br>
+    Prijs saus: <span id = "label777"></span><br><br>
+
+
+    <hr style="border-style:dotted; border-width: 4px; margin-left: 300px; margin-right: 300px; border-bottom-color: rgb(126, 169, 191); border-top-color: rgb(17,35,55);">
+<br>
+<br>
+<b>Korting: </b><span id = "disc"></span><br><br>
+<b>Totaalprijs: </b><span id = "label10"></span><br><br>
+
+<br><br>
+
+
+<input type = "button" id = "btn2" value = "Overzicht bestelling" onclick = "bestellen()" style = "background-color: rgb(126, 169, 191); color: rgb(12, 12, 87); border-color: royalblue; border-style:solid; border-radius: 20px; font-family: monospace;" >
+
+
+
+<script>
+
+	var artikelenArray = [
+            ["visfriet", 3.50],
+            ["viskoekje", 1.75],
+            ["kibbeling", 11.00],
+            ["zalmsnack", 3.95],
+	        ["zalmmoot", 32.50],
+	        ["dorade", 11.43],
+	        ["saus", 0.60]
+        ];
+
+    label1.innerHTML = artikelenArray[0][1].toFixed(2);
+    label2.innerHTML = artikelenArray[1][1].toFixed(2);
+    label3.innerHTML = artikelenArray[2][1].toFixed(2);
+    label4.innerHTML = artikelenArray[3][1].toFixed(2);
+    label5.innerHTML = artikelenArray[4][1].toFixed(2);
+    label6.innerHTML = artikelenArray[5][1].toFixed(2);
+    label7.innerHTML = artikelenArray[6][1].toFixed(2);
+
+
+
+var label10 = document.getElementById("label10");
+var disc = document.getElementById("disc");
+
+
+	function berekening() {
+        
+    var aantalVisfriet, aantalViskoekje, aantalKibbeling, aantalZalmsnack, aantalZalmmoot, aantalDorade, aantalSaus, subPrijsVisfriet, subPrijsViskoekje, subPrijsKibbeling, subPrijsZalmsnack, subPrijsZalmmoot, subPrijsDorade, subPrijsSaus, totaalPrijs;
+	var kortingVisfriet, kortingViskoekje, kortingZalmsnack, kortingSaus, sum, sumDiscount;
+	var aantallenArray = [];
+
+        aantalVisfriet = document.getElementById("inv1").value; 
+        aantalViskoekje = document.getElementById("inv2").value; 
+        aantalKibbeling = document.getElementById("inv3").value;
+        aantalZalmsnack = document.getElementById("inv4").value;
+        aantalZalmmoot = document.getElementById("inv5").value; 
+        aantalDorade = document.getElementById("inv6").value;
+        aantalSaus = document.getElementById("inv7").value;
+
+
+    label11.innerHTML = aantalVisfriet; 
+    label22.innerHTML = aantalViskoekje; 
+    label33.innerHTML = aantalKibbeling;
+    label44.innerHTML = aantalZalmsnack;
+    label55.innerHTML = aantalZalmmoot; 
+    label66.innerHTML = aantalDorade;
+    label77.innerHTML = aantalSaus;
+    label10.innerHTML = totaalPrijs; 
+
+
+    aantalObject = {aantalArtikel1: aantalVisfriet, aantalArtikel2: aantalViskoekje, aantalArtikel3: aantalKibbeling, aantalArtikel4: aantalZalmsnack, aantalArtikel5: aantalZalmmoot, aantalArtikel6: aantalDorade, aantalArtikel7: aantalSaus};
+	console.log(aantalObject.aantalArtikel1 + " " + aantalObject.aantalArtikel2);
+
+   
+	sub1 = (aantalVisfriet * artikelenArray[0][1]).toFixed(2);
+	sub2 = (aantalViskoekje * artikelenArray[1][1]).toFixed(2); 
+    sub3 = (aantalKibbeling * artikelenArray[2][1]).toFixed(2);
+	sub4 = (aantalZalmsnack * artikelenArray[3][1]).toFixed(2);
+	sub5 = (aantalZalmmoot * artikelenArray[4][1]).toFixed(2); 
+    sub6 = (aantalDorade * artikelenArray[5][1]).toFixed(2);
+	sub7 = (aantalSaus * artikelenArray[6][1]).toFixed(2);
+
+	subtotaalObject = {sub1: sub1, sub2: sub2, sub3: sub3,sub4: sub4, sub5: sub5, sub6: sub6, sub7: subPrijsSaus,};
+	console.log(subtotaalObject.subtotaalArtikel1 + " " + subtotaalObject.subtotaalArtikel2);        
+
+	label111.innerHTML = sub1;
+	label222.innerHTML = sub2;
+	label333.innerHTML = sub3;
+	label444.innerHTML = sub4;
+	label555.innerHTML = sub5;
+	label666.innerHTML = sub6;	
+    label777.innerHTML = sub7;
+
+    kortingVisfriet = (aantalObject.aantalArtikel1/3 - (aantalObject.aantalArtikel1/3)%1);
+    kortingViskoekje = (aantalObject.aantalArtikel2/3 - (aantalObject.aantalArtikel2/3)%1); 
+	kortingZalmsnack = (aantalObject.aantalArtikel4/3 - (aantalObject.aantalArtikel4/3)%1); 
+	kortingSaus = (aantalObject.aantalArtikel7/3 - (aantalObject.aantalArtikel7/3)%1);
+
+
+
+	sumDiscount = (kortingVisfriet + kortingViskoekje + kortingZalmsnack + kortingSaus) * 3 * 0.09;
+	disc.innerHTML = sumDiscount; 
+	sumDiscountObject = {korting: sumDiscount};
+
+	sum = (parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) + parseFloat(sub4) + parseFloat(sub5) + parseFloat(sub6) + parseFloat(sub7)).toFixed(2);
+	console.log("subtotaal: " + sum);
+	sumObject = {subtotaal: sum};
+
+	totaalPrijs = (sum - sumDiscount).toFixed(2);
+	console.log("totaalprijs: " + totaalPrijs);
+	label10.innerHTML = "€ " + totaalPrijs;
+	totaalPrijsObject = {totaalprijs: totaalPrijs};
+}
+
+function bestellen() {
+   
+
+		sessionStorage.setItem('sesArtikelenArray', JSON.stringify(artikelenArray)); 
+		sessionStorage.setItem('sesAantallenArray', JSON.stringify(aantallenArray));
+		sessionStorage.setItem('sesSubtotaal', JSON.stringify(subtotaal));
+		sessionStorage.setItem('sesTotaalPrijs', JSON.stringify(totaalPrijs));
+        sessionStorage.setItem('sesSum', JSON.stringify(sumObject));
+		sessionStorage.setItem('sesSumDiscount', JSON.stringify(sumDiscountObject));
+        
+ location.href = "factuur.html"
+
+}
+</script>
+
+
+</body></html>
